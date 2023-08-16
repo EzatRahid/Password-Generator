@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezo Password generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="wrapper">
+            <div class="input-box">
+                <input type="text" disabled>
+                <span class="matieral-symbols-rounded">Copy _all</span>
+            </div>
+            <div class="pass-indicator">
+                <div class="pass-length">
+                    <div class="details">
+                        <label class="title">
+                            Password Length
+                        </label>
+                    </div>
+                    <input type="range" id="" min="1" max="30" value="15" step="1">
+                </div>
+                <div class="pass-settings">
+                    <label class="title">Pass Settings</label>
+                    <ul class="options">
+                        <li class="options">
+                            <input type="checkbox"  id="lowercase" checked>
+                            <label for="">Lowercase (a-z)</label>
+                        </li>
+                        <li class="options">
+                            <input type="checkbox"  id="uppercase" checked>
+                            <label for="">Uppercase (A-Z)</label>
+                        </li>
+                        <li class="options">
+                            <input type="checkbox"  id="numbers" checked>
+                            <label for="">Numbers (0-9)</label>
+                        </li>
+                        <li class="options">
+                            <input type="checkbox"  id="symbols" checked>
+                            <label for="">Symbols (!-$^+)</label>
+                        </li>
+                        <li class="options">
+                            <input type="checkbox"  id="exc-duplicate" checked>
+                            <label for="">Exclude Duplicate </label>
+                        </li>
+                        <li class="options">
+                            <input type="checkbox"  id="spaces" checked>
+                            <label for="">Include Spaces</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="generate-btn">Generate Password</button>
+        </div>
+    </div>
+</body>
+</html>
