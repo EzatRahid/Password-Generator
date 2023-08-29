@@ -56,7 +56,7 @@ const updateSlider = () =>{
 updatePassIndicator()
 updateSlider();
 
-const copyPassword = () {
+const copyPassword = () => {
     navigator.clipboard.writeText(passwordInput.value)
     copyIcon.innerHTML = 'check'
     copyIcon.style.color = '#4285f4'
