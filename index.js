@@ -5,7 +5,7 @@ const passwordInput = document.querySelector(".input-box input");
 const passIndicator = document.querySelector(".pass-indicator");
 const generateBtn = document.querySelector(".generate-btn");
 
-const character  ={
+const character  = {
     lowercase: 'abcdefghijklmnopqrstuvwxyz',
     uppercase: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
     numbers: '0123456789',
@@ -37,5 +37,7 @@ const generatePassword = () => {
         } else{
             randomPassword += randomChar;
         }
-    }
+    } 
+
+    passwordInput.value = randomPassword;
 }
