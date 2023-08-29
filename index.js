@@ -46,3 +46,16 @@ const generatePassword = () => {
 const updatePassIndicator = () =>{
     passIndicator.id = lengthSlider.value <=8 ? 'weak' : lengthSlider.value <=16 ? "meduim" : 'strong'
 }
+
+
+const updateSlider = () =>{
+    document.querySelector('.pass-length span').innerHTML = lengthSlider.value
+    generatePassword()
+}
+
+updatePassIndicator()
+updateSlider();
+
+const copyPassword = () {
+    
+}
